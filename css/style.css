@@ -77,18 +77,18 @@ html {
     margin-left: 4%;
     color: #EAEAEA;
     font-family: 'Khula', sans-serif;
-    font-weight: 800; }
+    font-weight: 600; }
   .main .about .background ul {
     margin-left: 4%; }
     .main .about .background ul li {
       font-family: 'Khula', sans-serif;
-      font-weight: 800;
+      font-weight: 600;
       color: #EAEAEA; }
   .main .about .why h4 {
     margin-left: 4%;
     color: #EAEAEA;
     font-family: 'Khula', sans-serif;
-    font-weight: 800; }
+    font-weight: 600; }
   .main .about .why p {
     max-width: 90%;
     margin-left: 4%;
@@ -121,7 +121,7 @@ html {
     background-image: -webkit-linear-gradient(#00ff00, #000022);
     background-image: -moz-linear-gradient(#473e4f, #51475a);
     background-image: -o-linear-gradient(#473e4f, #51475a);
-    background-image: linear-gradient(#ff8103, #ff8103);
+    background-image: linear-gradient(#ec7f11, #ec7f11);
     background-size: 50% 100%;
     background-repeat: no-repeat;
     /*     border-radius: 5px; */
@@ -166,7 +166,7 @@ html {
     .main .about .what ul li {
       max-width: 90%;
       font-family: 'Khula', sans-serif;
-      font-weight: 800;
+      font-weight: 600;
       color: #EAEAEA; }
   .main .projects .projectShape {
     overflow: hidden; }
@@ -185,7 +185,22 @@ html {
   .main .projects .projectBg {
     background-color: #004A8C;
     min-height: 724px;
-    margin-top: -9px; }
+    margin-top: -9px;
+    border-bottom: 11px solid #EAEAEA;
+    padding-bottom: 6%; }
+    .main .projects .projectBg .project .techUsed h5 {
+      float: none;
+      margin-left: 4%;
+      margin-top: 0%; }
+    .main .projects .projectBg .project .techUsed .listOne, .main .projects .projectBg .project .techUsed .listTwo {
+      color: #EAEAEA;
+      display: inline-block;
+      font-family: 'Khula', sans-serif;
+      font-weight: 600;
+      width: 33%;
+      margin-left: 5%; }
+      .main .projects .projectBg .project .techUsed .listOne ul li, .main .projects .projectBg .project .techUsed .listTwo ul li {
+        margin-bottom: 0px; }
     .main .projects .projectBg .project h5 {
       float: right;
       padding-right: 25%;
@@ -209,11 +224,17 @@ html {
     .main .projects .projectBg .projectLinks {
       margin-left: 24px; }
       .main .projects .projectBg .projectLinks .button {
-        color: #EAEAEA; }
+        color: #EAEAEA;
+        font-size: 14px; }
+      .main .projects .projectBg .projectLinks .button:hover {
+        color: #EAEAEA;
+        font-size: 14px; }
+      .main .projects .projectBg .projectLinks .codeBtn {
+        margin-left: 8%; }
   .main .contacts {
     margin-bottom: 8%;
     min-height: 444px;
-    background-color: #ff8103; }
+    background-color: #ec7f11; }
     .main .contacts h4 {
       margin-left: 4%;
       color: #EAEAEA;
@@ -232,6 +253,8 @@ html {
       .main .contacts .contactGroup .contactOption {
         display: inline-block;
         margin: 0% 10% 0% 8%; }
+        .main .contacts .contactGroup .contactOption a {
+          text-decoration: none; }
         .main .contacts .contactGroup .contactOption .contactIcon {
           width: 44px;
           height: 44px;
@@ -245,6 +268,11 @@ html {
           font-family: 'Khula', sans-serif;
           color: #EAEAEA;
           font-size: 22px; }
+        .main .contacts .contactGroup .contactOption h6:hover {
+          color: #177EAA; }
+
+.hidden {
+  visibility: hidden; }
 
 @media (max-width: 840px) {
   .nav {

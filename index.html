@@ -1,3 +1,9 @@
+<!-- To work on...
+- Links
+- In progress banner
+- hr rule tag background color
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,8 +31,9 @@
           <li><a href="#contact">Contact</a></li>
           <li>
             <div class="navContacts">
-              <a href="#" target="_blank"><h5>LinkedIn</h5></a><br>
-              <a href="#"><h5>email</h5></a><br>
+              <a href="https://www.linkedin.com/in/will-cook-1234" target="_blank"><h5>LinkedIn</h5></a><br>
+              <!-- <a href="#"><h5>email</h5></a> -->
+              <a href="mailto:hello@doubleucook.com?subject=I saw your website"><h5>email</h5></a><br>
               <a href="https://github.com/willcook4" target="_blank"><h5>GitHub</h5></a>
               <!-- <a href="#"><h5>Twitter</h5></a> -->
             </div>
@@ -107,10 +114,10 @@
               <div class="what">
                 <h4>What am I working on now?</h4>
                 <ul>
-                  <li>I have a website for a family member that I’m building.</li>
                   <li>I’m going back over my General Assembly projects and updating them to JavaScript ES6.</li>
+                  <li>I have a website for a family member that I’m building.</li>
                   <li>I’m regularaly attending meetups to become more engaged with the tech community in London.</li>
-                  <li>I’m interested in learning Angular2 and React and I’m doing online tutorials to learn more about these exciting technologies.</li>
+                  <li>I’m interested in learning React and I’m doing online tutorials to learn more about these exciting technologies.</li>
                 </ul>
               </div>
             </div>
@@ -124,14 +131,51 @@
               <h4 class="projectsTitle">Projects</h4>
               <div class="projectBg">
                 <div class="project">
-                  <h5>Bike London</h5>
+                  <h5>Heist Advisors</h5>
                   <div class="project-image .u-max-full-width">
-                    <img src="images/screenshot.png">
+                    <img src="images/HeistAdvisors.png">
                   </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p>This site was buit in a week long team sprint at General Assembly. The project was an exploration into the creation and consuming of API's. Simply put we created a robbery assistant app. You select a city in the world, possible heist locations are presented to you with likely odds of success and rewards. Choose the one you want and select rob the place. The game then plays the odds. Will you get to your waiting plane at the nearest airport before the police catch you?<br><br>
+                  As a team we set about building and testing an MVP(Minimum Viable Product). This came about through a basic test app. Pulling data from the Google Maps API to give a start and end location.<br><br>
+                  This data was improved with the inclusion of the SITA API which gave the nearest Airport. Avoiding false positive results from google (e.g. Airport taxi companies were listed as Airports by Google Maps Places API).
+                  <br><br>
+                  Inclusion of more possible heist locations came about from extending the search to include banks, Jewellery stores through the Google Maps Places API.
+                  The nearest police station to the heist location is found through another call via the Google Maps Places API.  Animation is done by following the route that is returned from the directions request. Game logic is improved with the Police having a faster travel time ('optimistic' traffic and increased speed to reflect their lights and sirens.
+                  </p>
+                  <div class="techUsed">
+                    <h5>Technology Used:</h5>
+                    <div class="lists">
+                      <div class="listOne">
+                        <ul>
+                          <li>Node</li>
+                          <li>Express</li>
+                          <li>Mongoose</li>
+                          <li>Body Parser</li>
+                          <li>Cors</li>
+                          <li>Morgan - Logging</li>
+                          <li>Underscore</li>
+                          <li>Foundation</li>
+                          <li>Bower</li>
+                        </ul>
+                      </div>
+                      <div class="listTwo">
+                        <ul>
+                          <li>jQuery</li>
+                          <li>git</li>
+                          <li>GitHub</li>
+                          <li>Heroku</li>
+                          <li>Google Maps API <br> - inc Places Library</li>
+                          <li>SITA Airports API</li>
+                          <li>JavaScript</li>
+                          <li>SASS</li>
+                          <!-- <li class="hidden"></li> -->
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                   <div class="projectLinks">
-                    <a class="button" href="#">See the project</a>
-                    <a class="button">See the code</a>
+                    <a class="button" href="http://heist-advisors.herokuapp.com/">See the project</a>
+                    <a class="button codeBtn">See the code</a>
                   </div>
                 </div>
               </div>
@@ -141,14 +185,135 @@
                   <div class="project-image .u-max-full-width">
                     <img src="images/bikeLondon.png" alt="Biking Game in London traffic">
                   </div>
-                  <p>This project was about bringing together the skills we had learnt after a couple of weeks at GA in one individual project. Aim of the project was to include separate HTML / CSS / JavaScript files, host a working game somewhere on the internet. Technology Used: Javascript, jQuery, HMTL5, CSS3, GitHub, Heroku, git</p>
+                  <p>This project was about bringing together the skills we had learnt after a couple of weeks at GA in one individual project. Aim of the project was to include separate HTML / CSS / JavaScript files, host a working game somewhere on the internet.
+                  <br>
+                  <br>
+                  I was interested in creating a keypress control game. Similar to a car driving game but making the player a cyclist in London.
+                  <br>
+                  <br>
+                  The game requires balance. You keep your balance by tapping keys with your left hand. As you move your balance amount goes down. Just like in real life, the more you wiggle on a bike the harder it is. Direction keys enable you to control the character on screen and hopefully get them to safety. Avoid the cars, especially the black cabs! Stay safe long enough and you will be rewarded.
+                  <br>
+                  <br>
+                  The biggest challenge I had was the creation of random cars. No two games of Bike London are the same. Cars are created and they have different speeds. These speeds are controlled through animations. The challenge was not in the creation of cars but in not getting the cars to overlap as this is unrealistic.
+                  <br>
+                  <br>
+                  Given more time, I would have liked to add more variation in how the road behaves with potholes, corners and more erratic driving and to force the player to start in a lane rather than in the middle of the street.</p>
+                  <div class="techUsed">
+                    <h5>Technology Used:</h5>
+                    <div class="lists">
+                      <div class="listOne">
+                        <ul>
+                          <li>HMTL5</li>
+                          <li>Javascript</li>
+                          <li>CSS3</li>
+                          <li>jQuery</li>
+                        </ul>
+                      </div>
+                      <div class="listTwo">
+                        <ul>
+                          <li>git</li>
+                          <li>GitHub</li>
+                          <li>Heroku</li>
+                          <li class="hidden"></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                   <div class="projectLinks">
                     <a class="button" href="https://willbikelondon.herokuapp.com/" target="_blank">Try the game</a>
-                    <a class="button" href="https://github.com/willcook4/BikeLondon" target="_blank">See the code</a>
+                    <a class="button codeBtn" href="https://github.com/willcook4/BikeLondon" target="_blank">See the code</a>
                   </div>
                 </div>
               </div>
               <div class="projectBg">
+                <div class="project">
+                  <h5>Aught - Borrow something</h5>
+                  <div class="project-image .u-max-full-width">
+                    <img src="images/AughtApp.png">
+                  </div>
+                  <p>Aught is a concept site for a 'thing' sharing website. Users can login and view items that people in their community are sharing and they can share items themselves.
+                  <br><br> Many high price items spend much of their time gathering dust. When we all share we all buy less stuff. Then when we do buy something then we can spend more on items that are better. In short when we share the world becomes a better place.
+                  <br><br> The site was built as Ruby on Rails project during my time in the immersive web development program at General Assembly</p>
+                  <div class="techUsed">
+                    <h5>Technology Used:</h5>
+                    <div class="lists">
+                      <div class="listOne">
+                        <ul>
+                          <li>Ruby</li>
+                          <li>Ruby on Rails</li>
+                          <li>JavaScript</li>
+                          <li>jQuery</li>
+                          <li>CSS</li>
+                          <li>HTML5</li>
+                          <li>Adobe Photoshop</li>
+                          <li>MacDown</li>
+                          <li>Balsamiq</li>
+                          <li>Cyberduck</li>
+                        </ul>
+                      </div>
+                      <div class="listTwo">
+                        <ul>
+                          <li>Carrierwave <br> - Image uploading</li>
+                          <li>Devise<br> - Authentication</li>
+                          <li>Bootstrap v4</li>
+                          <li>Select2 - <br> JavaScript library</li>
+                          <li>Amazon Web Services - S3</li>
+                          <li>Heroku</li>
+                          <li>PostgreSQL db</li>
+                          <!-- <li class="hidden"></li> -->
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="projectLinks">
+                    <a class="button" href="http://aughtapp.herokuapp.com" target="_blank">See the project</a>
+                    <a class="button codeBtn" href='https://github.com/willcook4/WDI_Project4' target="_blank">See the code</a>
+                  </div>
+                </div>
+              </div>
+              <div class="projectBg">
+                <div class="project">
+                  <h5>Four*Limes - eCommerce Site</h5>
+                  <div class="project-image .u-max-full-width">
+                    <img src="images/FourLimesShop.png">
+                  </div>
+                  <p>Built from scratch the idea of this project was to explore an ecommerce platform. Taking inspiration from existing fruit and vege delivery sites I set about over a week to develop, deploy and present a viable copycat site.<br><br> Integrating payment options with Stripe, building out a back end for stock and delivery management as well as UX/UI design for the store. Working along designed paths for planned user journeys. Adding in basic HTML email sending for order confirmation I explored automation of some tasks. Working to a tight deadline and on my own this was a project that I learnt alot from and hope to further develop as I experiment with future technology.</p>
+                  <div class="techUsed">
+                    <h5>Technology Used:</h5>
+                    <div class="lists">
+                      <div class="listOne">
+                        <ul>
+                          <li>Node</li>
+                          <li>Stripe API</li>
+                          <li>Nodemailer</li>
+                          <li>JavaScript</li>
+                          <li>CSS</li>
+                          <li>HTML5</li>
+                          <li>Heroku</li>
+
+                        </ul>
+                      </div>
+                      <div class="listTwo">
+                        <ul>
+                          <li>MacDown</li>
+                          <li>Adobe XD Mockup</li>
+                          <li>Cyberduck</li>
+                          <li>Devise<br> - Authentication</li>
+                          <li>Bootstrap v4</li>
+                          <li>Amazon Web Services - S3</li>
+                          <!-- <li class="hidden"></li> -->
+                          <!-- <li class="hidden"></li> -->
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="projectLinks">
+                    <a class="button" href="http://fourlimes.herokuapp.com">See the project</a>
+                    <a class="button codeBtn" href="https://github.com/willcook4/WDI_Project4" >See the code</a>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="projectBg">
                 <div class="project">
                   <h5>Bike London</h5>
                   <div class="project-image .u-max-full-width">
@@ -160,33 +325,7 @@
                     <a class="button">See the code</a>
                   </div>
                 </div>
-              </div>
-              <div class="projectBg">
-                <div class="project">
-                  <h5>Bike London</h5>
-                  <div class="project-image .u-max-full-width">
-                    <img src="images/screenshot.png">
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <div class="projectLinks">
-                    <a class="button" href="#">See the project</a>
-                    <a class="button">See the code</a>
-                  </div>
-                </div>
-              </div>
-              <div class="projectBg">
-                <div class="project">
-                  <h5>Bike London</h5>
-                  <div class="project-image .u-max-full-width">
-                    <img src="images/screenshot.png">
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <div class="projectLinks">
-                    <a class="button" href="#">See the project</a>
-                    <a class="button">See the code</a>
-                  </div>
-                </div>
-              </div>
+              </div> -->
             </div>
 
             <div class="contacts" id="contact">
@@ -198,13 +337,13 @@
                 <p>I’m currently looking for oppourtunities. Drop me a message or connect via one of the following…</p>
                 <div class="contactGroup">
                   <div class="contactOption">
-                    <a href="#" target="_blank">
+                    <a href="mailto:hello@doubleucook.com?subject=I saw your website" target="_blank">
                       <div class="contactIcon"><img class="emailIcon" src="./images/email.png" alt="email icon"></div>
                       <h6>Email</h6>
                     </a>
                   </div>
                   <div class="contactOption">
-                    <a href="#" target="_blank">
+                    <a href="https://www.linkedin.com/in/will-cook-1234" target="_blank">
                       <div class="contactIcon"><img src="./images/Lin.png" alt="LinkedIn icon"></div>
                       <h6>LinkedIn</h6>
                     </a>
