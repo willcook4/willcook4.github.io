@@ -13,7 +13,7 @@ html {
 
 .nav {
   position: fixed;
-  width: 27%;
+  max-width: 27%;
   margin-top: 2%; }
   .nav h2 {
     font-family: 'Khula', sans-serif;
@@ -192,15 +192,17 @@ html {
       float: none;
       margin-left: 4%;
       margin-top: 0%; }
-    .main .projects .projectBg .project .techUsed .listOne, .main .projects .projectBg .project .techUsed .listTwo {
-      color: #EAEAEA;
-      display: inline-block;
-      font-family: 'Khula', sans-serif;
-      font-weight: 600;
-      width: 33%;
+    .main .projects .projectBg .project .techUsed .lists {
       margin-left: 5%; }
-      .main .projects .projectBg .project .techUsed .listOne ul li, .main .projects .projectBg .project .techUsed .listTwo ul li {
-        margin-bottom: 0px; }
+      .main .projects .projectBg .project .techUsed .lists .listOne, .main .projects .projectBg .project .techUsed .lists .listTwo {
+        color: #EAEAEA;
+        display: inline-block;
+        font-family: 'Khula', sans-serif;
+        font-weight: 600;
+        width: 33%;
+        margin-left: 5%; }
+        .main .projects .projectBg .project .techUsed .lists .listOne ul li, .main .projects .projectBg .project .techUsed .lists .listTwo ul li {
+          margin-bottom: 0px; }
     .main .projects .projectBg .project h5 {
       float: right;
       padding-right: 25%;

@@ -30,7 +30,7 @@ html {
   // background-color: red;
   // float: left;
   position: fixed;
-  width: 27%;
+  max-width: 27%;
   margin-top: 2%;
   h2{
     font-family: 'Khula', sans-serif;
@@ -286,16 +286,19 @@ html {
             margin-left: 4%;
             margin-top: 0%;
           }
-          .listOne, .listTwo {
-            color: $non-white;
-            display: inline-block;
-            font-family: 'Khula', sans-serif;
-            font-weight: 600;
-            width: 33%;
+          .lists {
             margin-left: 5%;
-            ul{
-              li{
-                margin-bottom: 0px;
+            .listOne, .listTwo {
+              color: $non-white;
+              display: inline-block;
+              font-family: 'Khula', sans-serif;
+              font-weight: 600;
+              width: 33%;
+              margin-left: 5%;
+              ul{
+                li{
+                  margin-bottom: 0px;
+                }
               }
             }
           }
