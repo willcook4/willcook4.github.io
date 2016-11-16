@@ -109,52 +109,6 @@ html {
     font-family: 'Khula', sans-serif;
     font-weight: 800;
     font-size: 16px; }
-  .main .about .skills input[type=range] {
-    float: right;
-    margin-right: 10%;
-    outline: 1px solid #ff8103;
-    padding: 0;
-    width: 50%;
-    height: 13px;
-    background-color: transparent;
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #00ff00));
-    background-image: -webkit-linear-gradient(#00ff00, #000022);
-    background-image: -moz-linear-gradient(#473e4f, #51475a);
-    background-image: -o-linear-gradient(#473e4f, #51475a);
-    background-image: linear-gradient(#ec7f11, #ec7f11);
-    background-size: 50% 100%;
-    background-repeat: no-repeat;
-    /*     border-radius: 5px; */
-    cursor: pointer;
-    -webkit-appearance: none; }
-  .main .about .skills input[type=range]::-webkit-slider-runnable-track {
-    box-shadow: none;
-    border: none;
-    background: #EAEAEA;
-    -webkit-appearance: none; }
-  .main .about .skills input[type=range]::-moz-range-track {
-    box-shadow: none;
-    border: none;
-    background: transparent; }
-  .main .about .skills input[type=range]::-moz-focus-outer {
-    border: 0; }
-  .main .about .skills input[type=range]::-webkit-slider-thumb {
-    width: 0px;
-    height: 0px;
-    border: 0;
-    background: #fff;
-    border-radius: 100%;
-    box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.1);
-    -webkit-appearance: none; }
-  .main .about .skills input[type=range]::-moz-range-thumb {
-    width: 0px;
-    height: 0px;
-    border: 0;
-    background: #fff;
-    border-radius: 100%;
-    box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.1); }
-  .main .about .skills .slider {
-    margin-top: 30px; }
   .main .about .what h4 {
     padding-top: 7%;
     margin-left: 4%;
@@ -215,6 +169,7 @@ html {
       margin: 0 auto; }
       .main .projects .projectBg .project .project-image img {
         max-width: 100%;
+        min-width: 95%;
         height: auto; }
     .main .projects .projectBg .project p {
       margin-top: 4%;
@@ -248,6 +203,8 @@ html {
       font-family: 'Khula', sans-serif;
       color: #EAEAEA;
       display: inline-block; }
+    .main .contacts .contactBlurb {
+      margin-left: 16%; }
     .main .contacts .contactShape {
       fill: #EAEAEA; }
     .main .contacts .contactGroup {
@@ -260,7 +217,7 @@ html {
         .main .contacts .contactGroup .contactOption .contactIcon {
           width: 44px;
           height: 44px;
-          margin: 0px 0px 10px 16px; }
+          margin: 4px auto; }
           .main .contacts .contactGroup .contactOption .contactIcon img {
             width: 100%;
             height: 100%; }
@@ -289,5 +246,41 @@ html {
 @media (min-width: 550px) {
   .nav {
     margin-left: 2%; } }
+.cavity {
+  margin-left: 14%;
+  border: 1px solid #ec7f11;
+  width: 70%;
+  height: 13px; }
+
+.fill {
+  background-color: #ec7f11;
+  height: 100%; }
+
+.javascript {
+  width: 85%; }
+
+.ruby {
+  width: 70%; }
+
+.css {
+  width: 70%; }
+
+.git {
+  width: 80%; }
+
+.mean {
+  width: 80%; }
+
+.manage {
+  width: 90%; }
+
+.deploy {
+  width: 85%; }
+
+.speaking {
+  width: 90%; }
+
+.contactBlurb {
+  margin-left: 16% !important; }
 
 /*# sourceMappingURL=style.css.map */
