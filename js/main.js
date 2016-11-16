@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('- Chocolate ');
     console.log('- Beer');
     console.log('- Penguins');
-    console.log('- Beers');
+    console.log('- Honey');
     console.log('- Apple Products');
   }
   function option2() {
