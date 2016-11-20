@@ -252,6 +252,9 @@ html {
         .button {
           color: $non-white;
           font-size: 14px;
+          width: 44%;
+          padding-left: 3%;
+          padding-right: 3%;
         }
         .button:hover {
           color: $non-white;
@@ -340,6 +343,16 @@ html {
 @media (min-width: 550px) {
   .nav {
     margin-left: 2%;
+  }
+}
+
+@media (max-width: 550px) {
+  .codeBtn {
+    display: block;
+    width: 44%;
+  }
+  .main .projects .projectBg .projectLinks .codeBtn {
+    margin-left: 0%;
   }
 }
 

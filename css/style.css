@@ -182,7 +182,10 @@ html {
       margin-left: 24px; }
       .main .projects .projectBg .projectLinks .button {
         color: #EAEAEA;
-        font-size: 14px; }
+        font-size: 14px;
+        width: 44%;
+        padding-left: 3%;
+        padding-right: 3%; }
       .main .projects .projectBg .projectLinks .button:hover {
         color: #EAEAEA;
         font-size: 14px; }
@@ -246,6 +249,13 @@ html {
 @media (min-width: 550px) {
   .nav {
     margin-left: 2%; } }
+@media (max-width: 550px) {
+  .codeBtn {
+    display: block;
+    width: 44%; }
+
+  .main .projects .projectBg .projectLinks .codeBtn {
+    margin-left: 0%; } }
 .cavity {
   margin-left: 14%;
   border: 1px solid #ec7f11;
