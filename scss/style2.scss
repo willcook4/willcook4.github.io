@@ -139,7 +139,7 @@ html {
           margin-left: 4%;
           color: $non-white;
           font-family: 'Khula', sans-serif;
-          font-weight: 800;
+          font-weight: 600;
           display: inline-block;
         }
         p {
@@ -159,7 +159,7 @@ html {
           margin-left: 4%;
           color: $non-white;
           font-family: 'Khula', sans-serif;
-          font-weight: 800;
+          font-weight: 600;
         }
         ul {
           margin-left: 4%;
@@ -189,7 +189,7 @@ html {
       margin-left: 4%;
       color: $non-white;
       font-family: 'Khula', sans-serif;
-      font-weight: 800;
+      font-weight: 800 !important;
     }
     .projectBg {
       background-color: #004A8C;
@@ -349,10 +349,12 @@ html {
 @media (max-width: 550px) {
   .codeBtn {
     display: block;
-    width: 44%;
+    min-width: 80%;
+    // background-color: red;
   }
   .main .projects .projectBg .projectLinks .codeBtn {
     margin-left: 0%;
+    min-width: 80%;
   }
 }
 

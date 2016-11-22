@@ -99,7 +99,7 @@ html {
     margin-left: 4%;
     color: #EAEAEA;
     font-family: 'Khula', sans-serif;
-    font-weight: 800;
+    font-weight: 600;
     display: inline-block; }
   .main .about .skills p {
     margin-left: 1%; }
@@ -114,7 +114,7 @@ html {
     margin-left: 4%;
     color: #EAEAEA;
     font-family: 'Khula', sans-serif;
-    font-weight: 800; }
+    font-weight: 600; }
   .main .about .what ul {
     margin-left: 4%; }
     .main .about .what ul li {
@@ -135,7 +135,7 @@ html {
     margin-left: 4%;
     color: #EAEAEA;
     font-family: 'Khula', sans-serif;
-    font-weight: 800; }
+    font-weight: 800 !important; }
   .main .projects .projectBg {
     background-color: #004A8C;
     min-height: 724px;
@@ -252,10 +252,11 @@ html {
 @media (max-width: 550px) {
   .codeBtn {
     display: block;
-    width: 44%; }
+    min-width: 80%; }
 
   .main .projects .projectBg .projectLinks .codeBtn {
-    margin-left: 0%; } }
+    margin-left: 0%;
+    min-width: 80%; } }
 .cavity {
   margin-left: 14%;
   border: 1px solid #ec7f11;
