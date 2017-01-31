@@ -103,7 +103,7 @@ html {
     display: inline-block; }
   .main .about .skills p {
     margin-left: 1%; }
-  .main .about .skills label {
+  .main .about .skills span {
     margin-left: 4%;
     color: #EAEAEA;
     font-family: 'Khula', sans-serif;
