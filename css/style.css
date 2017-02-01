@@ -153,7 +153,7 @@ html {
         display: inline-block;
         font-family: 'Khula', sans-serif;
         font-weight: 600;
-        width: 33%;
+        width: auto;
         margin-left: 5%; }
         .main .projects .projectBg .project .techUsed .lists .listOne ul li, .main .projects .projectBg .project .techUsed .lists .listTwo ul li {
           margin-bottom: 0px; }
@@ -293,5 +293,3 @@ html {
 
 .contactBlurb {
   margin-left: 16% !important; }
-
-/*# sourceMappingURL=style.css.map */

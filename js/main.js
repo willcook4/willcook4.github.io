@@ -18,11 +18,11 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log(' - email Will');
   }
   function option4() {
-    console.log('I liking React at the moment, I\'m doing an online course in it');
+    console.log('I\'m liking React at the moment, I\'m doing an online course in it');
   }
 
   function option5() {
-    console.log('I\'m having a Moscow mule, what do you want?');
+    console.log('I\'m having a flat white, what do you want?');
   }
   function getRandomInt(min, max) {
     min = Math.ceil(min);
