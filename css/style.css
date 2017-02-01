@@ -156,7 +156,8 @@ html {
         width: auto;
         margin-left: 5%; }
         .main .projects .projectBg .project .techUsed .lists .listOne ul li, .main .projects .projectBg .project .techUsed .lists .listTwo ul li {
-          margin-bottom: 0px; }
+          margin-bottom: 0px;
+          min-width: 150px; }
     .main .projects .projectBg .project h5 {
       float: right;
       padding-right: 25%;
@@ -256,7 +257,20 @@ html {
 
   .main .projects .projectBg .projectLinks .codeBtn {
     margin-left: 0%;
-    min-width: 80%; } }
+    min-width: 80%; }
+
+  .main .projects .projectBg .project h5 {
+    margin-left: 5%;
+    float: left; }
+
+  .hidden {
+    display: none; }
+
+  .main .projects .projectBg .project .techUsed .lists {
+    margin-bottom: 15px; }
+
+  .main .projects .projectBg .project .techUsed .lists ul {
+    margin-bottom: 0px; } }
 .cavity {
   margin-left: 14%;
   border: 1px solid #ec7f11;
@@ -293,3 +307,5 @@ html {
 
 .contactBlurb {
   margin-left: 16% !important; }
+
+/*# sourceMappingURL=style.css.map */
