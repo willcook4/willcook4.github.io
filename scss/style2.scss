@@ -21,6 +21,15 @@ html {
   margin-top: 3%;
 }
 
+.externalLinks {
+  color: $shade-grey;
+  text-decoration: none;
+}
+
+.externalLinks:hover {
+  color: $non-white;
+}
+
 .nav {
   position: fixed;
   max-width: 27%;
@@ -70,6 +79,7 @@ html {
 
 .main {
   background-color: $primary-blue;
+  border-radius: 22px;
   .about{
       h4 {
         color: $non-white;
@@ -272,6 +282,8 @@ html {
     margin-bottom: 8%;
     min-height: 444px;
     background-color: $contrast-orange;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
     h4 {
       margin-left: 4%;
       color: $non-white;
@@ -309,7 +321,7 @@ html {
             height: 100%;
           }
           .emailIcon{
-            margin: 0px 0px 0px -1px;
+            margin: 0px 0px 0px 0px;
           }
         }
         h6 {
@@ -377,10 +389,13 @@ html {
   border: 1px solid $contrast-orange;
   width: 70%;
   height: 13px;
+  border-radius: 3px;
 }
 .fill {
   background-color: $contrast-orange;
   height: 100%;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .javascript {

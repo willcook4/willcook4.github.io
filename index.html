@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Khula:600,800" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
-    <link href="css/style.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
   </head>
@@ -19,21 +19,17 @@
       <div class="nav">
         <h1 class="navName">Will Cook</h1>
         <ul>
-          <!-- <h2 class="navHello">Hello</h2> -->
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
           <li>
             <div class="navContacts">
-              <a href="https://www.linkedin.com/in/will-cook-1234" target="_blank"><h5>LinkedIn</h5></a><br>
-              <!-- <a href="#"><h5>email</h5></a> -->
+              <a href="https://www.linkedin.com/in/will-cook" target="_blank"><h5>LinkedIn</h5></a><br>
               <a href="mailto:hello@doubleucook.com?subject=I%20saw%20your%20website"><h5>Email</h5></a><br>
               <a href="https://github.com/willcook4" target="_blank"><h5>GitHub</h5></a>
-              <!-- <a href="#"><h5>Twitter</h5></a> -->
             </div>
           </li>
         </ul>
-        <!-- <h1 class="navName">Will Cook</h1> -->
       </div>
 
       <div class="row">
@@ -148,7 +144,7 @@
                   </div>
                   <p>This site was built in a week long team sprint at General Assembly. The project was an exploration into the creation and consuming of APIs. Simply put, we created a robbery assistant app. You select a city in the world, possible heist locations are presented to you with likely odds of success and rewards. Choose the one you want and rob the place. The game then plays the odds. Will you get to your waiting plane at the nearest airport before the police catch you?<br><br>
                   As a team we set about building and testing an MVP(Minimum Viable Product). This came about through a basic test app. Pulling data from the Google Maps API to give a start and end location.<br><br>
-                  This data was improved with the inclusion of the SITA API which gave the nearest airport. Avoiding false positive results from google (e.g. Airport taxi companies were listed as airports by Google Maps Places API).
+                  This data was improved with the inclusion of the <del>SITA API</del> (UPDATE 2017): Lufthansa API which gives the nearest airport. This was changed to the token based Lufthansa API Due to SITA API changing pricing models. Lufthansa API gives accurate airport information, avoiding false positive results from other sources, for example Google Places (e.g. Airport taxi companies were listed as airports by Google Maps Places API as they were listed under Airports).
                   <br><br>
                   Inclusion of more possible heist locations came about from extending the search to include banks and jewellery stores through the Google Maps Places API.
                   The nearest police station to the heist location is found through another call via the Google Maps Places API.  Animation is done by following the route that is returned from the directions request. Game logic is improved with the Police having a faster travel time 'optimistic' traffic with their google directions request and increased speed to reflect their lights and sirens.
@@ -176,7 +172,7 @@
                           <li>GitHub</li>
                           <li>Heroku</li>
                           <li>Google Maps API</li>
-                          <li>SITA Airports API</li>
+                          <li>Lufthansa API</li>
                           <li>JavaScript</li>
                           <li>SASS</li>
                           <li class="hidden"></li>
@@ -190,6 +186,56 @@
                   </div>
                 </div>
               </div>
+              <!--  -->
+              <div class="projectBg">
+                <div class="project">
+                  <h5>React Todo App</h5>
+                  <div class="project-image .u-max-full-width">
+                    <img src="./images/todoApp.png " alt="todo app">
+                  </div>
+                  <p>This was a project that I did from following the <a class="externalLinks" href="https://www.udemy.com/the-complete-react-web-app-developer-course/" target="_blank">Udemy course</a> The Complete React Web App Developer Course by Andrew Mead. The course was my intro to Webpack V2 but the course was written in V1 so I had to research and chang my config and environment to work.<br><br>
+                  Login to your secure todo list with OAuth through your GitHub account (via Google Firebase), you can then View, Add and manage your todos. Your Todos are stored in a Google Firebase Database.<br><br>
+                  Tests were done in Karma, testing core components making development easier.<br><br>
+                  Although the front end is simply finished the project gave me a great challenge in working in the React and Redux environment.
+                  </p>
+                  <div class="techUsed">
+                    <h5>Technology Used:</h5>
+                    <div class="lists">
+                      <div class="listOne">
+                        <ul>
+                          <li>Node</li>
+                          <li>React</li>
+                          <li>Redux</li>
+                          <li>Webpack</li>
+                          <li>Babel</li>
+                          <li>Javascript ES6</li>
+                          <li>Karma</li>
+                          <li>Expect</li>
+                          <li>Foundation</li>
+                        </ul>
+                      </div>
+                      <div class="listTwo">
+                        <ul>
+                          <li>Firebase</li>
+                          <li>GitHub OAuth</li>
+                          <li>SASS</li>
+                          <li>jQuery</li>
+                          <li>git</li>
+                          <li>GitHub</li>
+                          <li>Heroku</li>
+                          <li>Moment.js</li>
+                          <li class="hidden"></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="projectLinks">
+                    <a class="button codeBtn" href="https://secret-cliffs-97435.herokuapp.com/">See the project</a>
+                    <a class="button codeBtn" href="https://github.com/willcook4/react-todo">See the code</a>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
               <div class="projectBg">
                 <div class="project">
                   <h5>Bike London</h5>
