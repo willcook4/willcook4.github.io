@@ -179,7 +179,8 @@ html {
       .main .projects .projectBg .project .project-image img {
         max-width: 100%;
         min-width: 95%;
-        height: auto; }
+        height: auto;
+        border-radius: 5px; }
     .main .projects .projectBg .project p {
       margin-top: 4%;
       max-width: 90%;
